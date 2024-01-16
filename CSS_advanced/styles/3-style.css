@@ -7,7 +7,7 @@
     --text-color:var(--color-black)
 }
 
-.section-tagline, card-category {
+.section-tagline, .card-category {
     color: var(--color-primary);
 }
 body, a {
