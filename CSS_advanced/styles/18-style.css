@@ -165,6 +165,7 @@ html {
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size-root: 10px;
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
@@ -188,9 +189,9 @@ html {
   --nav-item-font-family:var(--font-family-title);
   --nav-item-font-weight:var(--font-weight-bold);
   --nav-item-font-size:var(--font-size-medium);
-  --nav-item-letter-spacing: calc(0.04 * 62.5%);
+  --nav-item-letter-spacing: calc(0.04 * var(--font-size-root));
   --nav-item-display:inline-block;
-  --nav-item-margin:0 0 3rem 0;
+  --nav-item-margin: 0 0 calc(3 * var(--font-size-root)) 0;
   --nav-item-link-hover: var(--color-primary)
 }
 body {
@@ -219,7 +220,7 @@ body {
  }
  .nav .nav-link {
   display: block;
-  padding: calc(0.5 * 62.5%) 62.5%;
+  padding: calc(0.5 * var(--font-size-root)) var(--font-size-root);
  }
  .nav .nav-link:hover{
   color: var(--nav-item-link-hover);
