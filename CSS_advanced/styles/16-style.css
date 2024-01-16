@@ -222,7 +222,8 @@ a:active {
 }
 .container {
   width: 960px;
-  margin: 0 auto;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 .card-category {
   color: var(--color-primary);
