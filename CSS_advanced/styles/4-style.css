@@ -22,6 +22,6 @@ body, a {
 .section-tagline, .card-category {
     color: var(--color-primary);
 }
-section >h1,h2,h3,h4,h5,h6::before a {
+section h1,h2,h3,h4,h5,h6::before a {
     font-family: var(--font-family-title);
 }
