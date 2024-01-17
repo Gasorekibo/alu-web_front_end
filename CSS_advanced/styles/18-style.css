@@ -219,7 +219,7 @@ body {
  }
  .nav .nav-link {
   display: block;
-  padding: 31.25% 62.5%;
+  padding: 31.25% 62.5px;
  }
  .nav .nav-link:hover{
   color: var(--nav-item-link-hover);
