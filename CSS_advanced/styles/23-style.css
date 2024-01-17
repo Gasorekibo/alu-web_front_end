@@ -331,6 +331,6 @@ h6 {
 .social-link {
   display: block;
 }
-.social-link > svg {
+.social-link > svg:nth-child() {
   color: var(--text-color);
 }
