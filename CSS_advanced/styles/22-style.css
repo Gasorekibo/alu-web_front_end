@@ -263,7 +263,7 @@ ul.row {
 .visually-hidden {
   display: none;
 }
-data-section-theme{
+[data-section-theme="dark"]{
   background-color:var(--color-black)
 }
 .section {
