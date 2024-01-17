@@ -219,10 +219,10 @@ body {
  }
  .nav .nav-link {
   display: block;
-  padding-top: calc(62.5% / 2);
-  padding-bottom: calc(62.5% / 2);
-  padding-right: 62.5%;
-  padding-left: 62.5%;
+  padding-top: calc(50% * 1.622);
+  padding-bottom: calc(50% * 1.622);
+  padding-left: 100%;
+  padding-right: 100%;
  }
  .nav .nav-link:hover{
   color: var(--nav-item-link-hover);
