@@ -201,7 +201,7 @@ html {
   --button-font-size: var(--font-size-large);
   --button-hover-color:var(--color-white);
   --button-hover-text-decoration:none;
-  --button-hove-background:var(--color-primary);
+  --button-hover-background:var(--color-primary);
 }
 body {
   color: var(--text-color);
