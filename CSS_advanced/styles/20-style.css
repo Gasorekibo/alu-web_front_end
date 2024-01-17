@@ -248,7 +248,7 @@ ul.row {
 .row::after{
   content:"";
   display: table;
-  float: inherit;
+  float: none;
 }
 .col-1-3 {
   width: 33.33%;
