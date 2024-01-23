@@ -1,12 +1,12 @@
-$base-color: #3d3d3d;
-$text-color: #ff0000;
+$base-text-color: #3D3D3D;
+$red-text-color: #FF0000;
 body {
-  color: $base-color;
-  
+  color: $base-text-color;
+
+  .red {
     &:first-child {
-      .red {
-        color: $text-color;
-      }
-    
+      color: $red-text-color;
+    }
   }
 }
+
