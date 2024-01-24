@@ -1,5 +1,9 @@
+$break-point: 320px;
 h1 {
-    font-size: 20px; }
-    @media (max-width: 320px) {
-      h1 {
-        font-size: 14px; } }
+    font-size: 20px;
+}
+@media(max-width : $break-point) {
+    h1 {
+        font-size: 14px;
+    }
+}
