@@ -2,6 +2,6 @@
 
 @for $i from 1 through 4 {
     .col-#{$i} {
-        width: math.div(100 / 4);
+        width: math.div(100% / 4);
     }
 }
