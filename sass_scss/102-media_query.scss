@@ -13,9 +13,9 @@ h1 {
   @media only screen and (max-width: $break-point-lg) {
     font-size: 18px;
   }
-  h1.small {
-    @media (max-width: 320px) {
+}
+h1.small {
+    @media only screen and (max-width: 320px) {
       color: $text-color;
     }
-}
 }
