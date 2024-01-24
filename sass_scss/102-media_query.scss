@@ -1,0 +1,18 @@
+$break-point-sm: 320px;
+$break-point-md: 640px;
+$break-point-lg: 960px;
+h1 {
+  font-size: 20px;
+  @media only screen and (min-width: $break-point-sm) {
+    font-size: 14px;
+    .small {
+      color: #1d1d1d;
+    }
+  }
+  @media only screen and (max-width: $break-point-md) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: $break-point-lg) {
+    font-size: 18px;
+  }
+}
