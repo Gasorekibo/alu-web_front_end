@@ -1,3 +1,38 @@
-@use '@sass-fairy/list';
-@import "103-sort_list";
-@debug list.sort($list_to_sort)
+// @use '@sass-fairy/list';
+// @import "103-sort_list";
+// @debug list.sort($list_to_sort)
+
+// Custom sorting function
+@function custom-sort($list, $len) {
+    $sorted-list: ();
+  
+    @while $len > 0 {
+      $min-index: 1;
+      $min-value: nth($list, 1);
+  
+      @for $i from 2 through $len {
+        $current-value: nth($list, $i);
+        
+        @if $current-value < $min-value {
+          $min-value: $current-value;
+          $min-index: $i;
+        }
+      }
+  
+      $sorted-list: append($sorted-list, $min-value, comma);
+      $list: append(nth($list, $min-index + 1, comma), slice($list, 1, $min-index - 1), comma, slice($list, $min-index + 1));
+      $len: $len - 1;
+    }
+  
+    @return $sorted-list;
+  }
+  
+  // Original list
+  $list_to_sort: john anna zoe kim felicia carrie;
+  
+  // Sorting the list using the custom sort function
+  $sorted_list: custom-sort($list_to_sort, length($list_to_sort));
+  
+  // Debug output
+  @debug $sorted_list;
+  
