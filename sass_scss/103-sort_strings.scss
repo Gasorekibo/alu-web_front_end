@@ -2,7 +2,6 @@
 // @import "103-sort_list";
 // @debug list.sort($list_to_sort)
 
-// Custom sorting function
 @function custom-sort($list, $len) {
     $sorted-list: ();
   
@@ -12,15 +11,15 @@
   
       @for $i from 2 through $len {
         $current-value: nth($list, $i);
-        
+  
         @if $current-value < $min-value {
           $min-value: $current-value;
           $min-index: $i;
         }
       }
   
-      $sorted-list: append($sorted-list, $min-value, comma);
-      $list: append(nth($list, $min-index + 1, comma), slice($list, 1, $min-index - 1), comma, slice($list, $min-index + 1));
+      $sorted-list: append($sorted-list, $min-value, space); // Changed from comma to space
+      $list: append(slice($list, 1, $min-index - 1), slice($list, $min-index + 1)); // Removed comma
       $len: $len - 1;
     }
   
