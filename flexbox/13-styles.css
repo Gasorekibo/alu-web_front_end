@@ -750,5 +750,5 @@ margin-top: -8.5rem;
   content: ", ";
 }
 .tag-list li:last-child {
-  content: "";
+  content: " ";
 }
