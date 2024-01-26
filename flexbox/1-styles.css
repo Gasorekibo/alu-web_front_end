@@ -525,11 +525,11 @@ ul.row {
 .section-hero .section-inner {
   padding: 10rem 40rem 2rem 0;
 }
-.section-services {}
-.section-works{}
+
+
 .section-about-us {}
-.section-latest-news {}
-.section-testimonial {}
+
+
 .section-contact {}
 
 
@@ -606,7 +606,7 @@ ul.row {
 .card-work:hover .card-title {
   opacity: 1;
 }
-
+.section-works{}
 
 
 /* Card SERVICES
@@ -629,7 +629,7 @@ ul.row {
   transition-duration: 0.3s;
   transition-property: color, background-color;
 }
-
+.section-services {}
 
 /* Card TESTIMONIAL
       ============================= */
@@ -663,3 +663,4 @@ ul.row {
   font-size: 10rem;
   z-index: -1;
 }
+.section-testimonial {}
