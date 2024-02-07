@@ -11,4 +11,4 @@ The importance of Web Accessibility
 
 Tools to use for Web Accessibility
 
-![alt text](image.png)
+![alt text](image-1.png)
