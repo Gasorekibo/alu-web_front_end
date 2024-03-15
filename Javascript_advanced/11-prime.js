@@ -20,11 +20,13 @@ function countPrimeNumbers(start, end) {
   return count;
 }
 const startTime = performance.now();
-let functionCall = 1;
-while (functionCall <= 100) {
-  countPrimeNumbers(2, 100);
-  functionCall++;
-}
+setTimeout(() => {
+  let functionCall = 1;
+  while (functionCall <= 100) {
+    countPrimeNumbers(2, 100);
+    functionCall++;
+  }
+});
 const endTime = performance.now();
 const executionTime = endTime - startTime;
 console.log(
